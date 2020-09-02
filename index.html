@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/cabf1b3cb5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <img src="assets/logo.png" alt="shop logo" class="logo" />
+        <div class="navlist-cont">
+          <ul class="navlist">
+            <li class="navlist__li">Categorías</li>
+            <li class="navlist__li">Ofertas</li>
+            <li class="navlist__li">Log In/Sign Up</li>
+          </ul>
+          <input type="text" placeholder="Buscar..." class="search-bar" />
+          <i class="fas fa-search search-logo"></i>
+          <i class="fas fa-shopping-cart cart-logo" id="cart-logo"> (0)</i>
+        </div>
+      </nav>
+    </header>
+    <section class="hero">
+      <img src="assets/hero.png" alt="hero image" class="hero-img" />
+    </section>
+    <section class="main">
+      <article class="product" id="product">
+        <img src="assets/Zapas1.PNG" alt="" />
+        <div class="info">
+          <p class="titulo-producto" id="titulo-producto">Zapatillas Vans</p>
+          <p class="precio" id="precio">$4.500</p>
+          <button class="btn-addcart" id="btn-addcart">
+            Agregar al carrito
+          </button>
+        </div>
+      </article>
+      <article class="product" id="product">
+        <img src="assets/Zapas2.PNG" alt="" />
+        <div class="info">
+          <p class="titulo-producto" id="titulo-producto">Zapatillas Adidas</p>
+          <p class="precio" id="precio">$6.500</p>
+          <button class="btn-addcart" id="btn-addcart">
+            Agregar al carrito
+          </button>
+        </div>
+      </article>
+      <article class="product" id="product">
+        <img src="assets/Zapas3.PNG" alt="" />
+        <div class="info">
+          <p class="titulo-producto" id="titulo-producto">Zapatillas DC</p>
+          <p class="precio" id="precio">$5.000</p>
+          <button class="btn-addcart" id="btn-addcart">
+            Agregar al carrito
+          </button>
+        </div>
+      </article>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
