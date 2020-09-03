@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Cart</title>
+    <link rel="stylesheet" href="style_PAGO.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"/>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+          <img src="/logo_shoes.png" alt="shop logo" class="logo" />
+          <div class="navlist-cont">
+            <ul class="navlist">
+              <li class="navlist__li">Categorías</li>
+              <li class="navlist__li">Ofertas</li>
+              <li class="navlist__li">Log In / Sign Up</li>
+            </ul>
+            <input type="text" placeholder="Buscar..." class="search-bar" />
+            <i class="fas fa-search search-logo"></i>
+            <i class="fas fa-shopping-cart cart-logo" id="cart-logo"> (0)</i>
+          </div>
+        </nav>
+    </header>
+    <div class="container">  
+        <form id="checkout" action="" method="post">
+          <h3>Último paso!</h3>
+          <h4><strong>Completa tu método de pago</strong></h4>
+          <div>
+            <h5>Selecciona tipo de Tarjeta</h5>
+            <input type="radio" id="radio" name="debito" value="debito">
+            <label for="debito">Tarjeta de Débito</label><br>
+            <input type="radio" id="radio" name="credito" value="credito">
+            <label for="credito">Tarjeta de Crédito</label><br>
+          </div>
+          <div>
+            <input placeholder="Nombre Titular" type="text" tabindex="1" required autofocus>
+          </div>
+          <div>
+            <input placeholder="Número de la tarjeta" type="tel" tabindex="2" required autofocus>
+          </div>
+          <div>
+            <input placeholder="Fecha de Vencimiento" type="tel" tabindex="3" required autofocus>
+          </div>
+          <div>
+            <button name="Comprar" type="submit" id="submit" data-submit="...Enviando">Comprar</button>
+          </div>
+        </form>           
+    </div>
+    <footer>
+        <div class="copy">© 2020— All rights and shoes reserved</div>
+    </footer>
+</body>
+</html>
